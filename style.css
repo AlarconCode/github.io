@@ -309,12 +309,13 @@ h1.title.about::after {
 .skillGrid {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 40px;
     justify-content: center;
+    align-items: center;
 }
 
 .skillGrid li {
-    flex: 1 0 45%;
+    flex: 1 0 35%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -324,17 +325,19 @@ h1.title.about::after {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    flex: 1;
+    gap: 20px;
+    flex: 1 0 50%;
 }
 
-.itemContainer li:hover {
-    box-shadow: 0 0 15px 0px var(--green);
+
+.itemContainer:hover {
+    text-shadow: 0 0 5px var(--green);
 }
 
-.itemContainer i {
+.itemContainer i::before {
     font-size: 3rem;
     color: var(--lightest-slate);
+    background-color: none;
 }
 
 .icono {
@@ -345,7 +348,7 @@ h1.title.about::after {
     fill: var(--green);
 }
 
-.itemContainer i:hover {
+.itemContainer:hover {
     color: var(--green);
 }
 
