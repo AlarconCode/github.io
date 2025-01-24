@@ -23,6 +23,7 @@
 
 body {
     background-color: var(--navy);
+    padding: 0 2em;
 }
 
 p {
